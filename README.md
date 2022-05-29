@@ -1,1 +1,40 @@
-# install-docker
+# Descriotion
+
+Simple `Docker-engine and client` installer Bash script for `Ubuntu`.
+
+# Caution!
+
+Do NOT use this in Production!
+
+This repository *IS AS IS*.
+
+Without any guarantee or support.
+
+Not planned any collaboration policies yet, but the small changes PRs may be considered.
+
+## How to use
+
+- Make the script (.sh) files exacutable.
+- Run them by numbered order.
+
+### Tested on:
+- Tested successfully on fresh `Ubuntu` with the following specs:
+```
+# `cat /etc/os-release`
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+```
+
+#### Docker installation source from: 
+- (Install docker on Ubuntu)[https://docs.docker.com/engine/install/ubuntu/]
+
