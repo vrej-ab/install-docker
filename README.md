@@ -13,7 +13,7 @@ Without any guarantee or support.
 Not planned any collaboration policies yet, but the small changes PRs may be considered.
 
 ## How to use
-
+- Must be run as `root` user (*use at your own risk!*).
 - Make the script (.sh) files exacutable.
 - Run them by numbered order.
 
