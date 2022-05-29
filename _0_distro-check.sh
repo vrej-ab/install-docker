@@ -22,14 +22,16 @@ check_dirtro_compatibility(){
 
 check_next_script_to_run(){
 	if ! [ -f "${next_script_to_run}" ] ;then
-		echo -e "\n[ERROR]: ${next_script_to_run} - file not found."
-	elif ! [ -e "${next_script_to_run}" ] ;then
-		echo -e "\n[ERROR]: ${next_script_to_run} - file is not executable."
+		echo -e "\n[ERROR]: ${next_script_to_run} - file not found.\n"
+		exit 2
+	elif ! [ -x "${next_script_to_run}" ] ;then
+		echo -e "\n[ERROR]: ${next_script_to_run} - file is not executable.\n"
+		exit 2
 	else
 		read -rp "Confirm to run the: \"${next_script_to_run}\" script [y]: " confirmation
 		if ! [ "${confirmation}" == 'y' ] ;then
 			echo -e "\n[WARNING]: Not confirmed to run the next script, exitting...\n"
-			exit 1
+			exit 2
 		else
 			return 0
 		fi
