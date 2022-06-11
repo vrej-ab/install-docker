@@ -4,7 +4,7 @@ Simple `Docker-engine and client` installer Bash script for `Ubuntu`.
 
 # Caution!
 
-Do NOT use this in Production!
+Do NOT use this in Production without *testing* it in a *safe* environment!
 
 This repository *IS AS IS*.
 
@@ -16,6 +16,7 @@ Not planned any collaboration policies yet, but the small changes PRs may be con
 - Must be run as `root` user (*use at your own risk!*).
 - Make the script (.sh) files exacutable.
 - Run them by numbered order.
+  - May be configured to automatically run one after another, in such cases your confirmation will be interactivly needed to run the next script.
 
 ### Tested on:
 - Tested successfully on fresh `Ubuntu` with the following specs:
@@ -37,4 +38,9 @@ UBUNTU_CODENAME=focal
 
 #### Docker installation source from: 
 - (Install docker on Ubuntu)[https://docs.docker.com/engine/install/ubuntu/]
+
+## What to do next?
+If you find that this repository is useful, please support me by:
+- Please give it a `Star`.
+- Share my repository's Git link with your friends.
 
